@@ -39,6 +39,7 @@ rows.forEach((r) => {
     version: "0.0.0",
     scripts: {
       dev: "vite",
+      start: "vite",
       build: "vite build",
       preview: "vite preview",
     },

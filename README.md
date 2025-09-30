@@ -1,8 +1,8 @@
 # React + TypeScript + Vite
 
-Task Summary:
+## Task Summary:
 
-- A Node.js script was created that reads websites.csv containing domain, title, phone, address, etc.
+- A Node.js script reads websites.csv containing domain, title, phone, address, etc.
 
 - For each row, a separate React app is generated automatically.
 
@@ -12,31 +12,39 @@ Task Summary:
 
 - Contact Section – shows the phone number and address from the CSV.
 
-- Each app is created in its own folder (apps/foodexpress.com, apps/techhubbd.com, apps/bookbazaar.com).
+- Each app is created in its own folder, e.g.:
 
-- The script automatically generates all necessary files: package.json, vite.config.js, index.html, src/App.js, src/components/\*, and CSS.
+```bash
+build/<domain name>    which is your csv file domain name
 
-- After running the script, you can start each app using npm start or npm run dev.
+```
 
-- All apps are built separately inside the build/ folder.
+- The script automatically generates all necessary files: package.json, vite. config.js, index.html, src/App.jsx, src/components/\*, and CSS.
 
-## Key Points:
+- After running the script, you can start each app directly using npm start or npm run dev.
+- And then run the Project
 
-- Automation: Multiple React apps are created and built in one go.
+```bash
+cd build/<domain name>
+npm start
 
-- CSV-driven: App content comes directly from the CSV file.
-
-- Lightweight: No extra CSS frameworks are used.
-
-- Dynamic Hero: Hero section uses a random word for the title.
+```
 
 ## 7. Clone Repository
 
 ```bash
-git clone https://github.com/Shariful134/task-frontend.git
-cd task-frontend
+git clone https://github.com/Shariful134/react-app-generator.git
+cd react-app-generator
 npm install
 npm run dev
+```
+
+## Each React app run
+
+```bash
+cd build/<domain name>
+npm start
+
 ```
 
 ## 8. Install Dependencies
@@ -49,4 +57,18 @@ yarn install
 pnpm install
 # or
 bun install
+```
+
+## Key Points:
+
+- Automation: Multiple React apps are created and built in one go.
+
+- CSV-driven: App content comes directly from the CSV file.
+
+- Lightweight: No extra CSS frameworks are used.
+
+- Dynamic Hero: Hero section uses a random word for the title.
+
+```
+
 ```
